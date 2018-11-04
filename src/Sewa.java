@@ -9,5 +9,13 @@
  * @author NurcahyaNaniaA
  */
 public class Sewa {
+    private int lamaSewa;
+    
+    //membuat konstruktor class Sewa
+    public Sewa(int lamaSewa) {
+        this.lamaSewa = lamaSewa;
+    }
+    
+    
     
 }
