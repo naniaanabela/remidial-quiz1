@@ -10,7 +10,7 @@
  */
 public class Main {
     public static void main(String[] args) {
-    Peminjam p = new Peminjam("123","Nurcahya Nania");
+        Peminjam p = new Peminjam("123","Nurcahya Nania");
         Pegawai pe = new Pegawai("111","Helmi Nur");
         Sewa waktu = new Sewa(3);
         Barang barang = new Barang("Kamera SLR",100000,p  , pe, waktu);
