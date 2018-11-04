@@ -25,5 +25,10 @@ public class Sewa {
         this.lamaSewa = lamaSewa;
     }
     
-    
+    //membuat method info untuk menampilkan
+    public String info () {
+        String info = "" ;
+        info += "Lama Sewa : "  + getLamaSewa() +"\n" ;       
+        return info ;
+    }     
 }
