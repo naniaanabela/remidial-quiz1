@@ -38,4 +38,11 @@ public class Pegawai {
         this.namaPegawai = namaPegawai;
     }
     
+    //membuat method info untuk menampilkan
+    public String info(){
+        String info ="";
+        info += "id pegawai : " + this.idPegawai + "\n";
+        info += "Nama pegawai : " + this.namaPegawai + "\n";
+        return info;
+    }
 }
