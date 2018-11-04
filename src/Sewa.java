@@ -16,6 +16,14 @@ public class Sewa {
         this.lamaSewa = lamaSewa;
     }
     
+    //membuat method getter dan setter 
+    public int getLamaSewa() {
+        return lamaSewa;
+    }
+
+    public void setLamaSewa(int lamaSewa) {
+        this.lamaSewa = lamaSewa;
+    }
     
     
 }
