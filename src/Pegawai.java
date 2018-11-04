@@ -9,5 +9,17 @@
  * @author NurcahyaNaniaA
  */
 public class Pegawai {
+    private String idPegawai;
+    private String namaPegawai;
+
+    //membuat konstruktor class Pegawai
+    public Pegawai() {
+    }
+
+    public Pegawai(String idPegawai, String namaPegawai) {
+        this.idPegawai = idPegawai;
+        this.namaPegawai = namaPegawai;
+    }
+    
     
 }
