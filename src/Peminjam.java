@@ -34,4 +34,12 @@ public class Peminjam {
     public void setNamaPeminjam(String namaPeminjam) {
         this.namaPeminjam = namaPeminjam;
     }
+    
+    //membuat method info
+    public String info () {
+        String info = "" ;
+        info += "id peminjam : " + this.idPeminjam + "\n";
+        info += "Nama peminjam : " + this.namaPeminjam + "\n";
+        return info;
+    }
 }
