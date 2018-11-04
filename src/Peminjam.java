@@ -9,5 +9,29 @@
  * @author NurcahyaNaniaA
  */
 public class Peminjam {
+    private String idPeminjam;
+    private String namaPeminjam;
     
+    //membuat konstruktor class Peminjam
+    public Peminjam(String idPeminjam, String namaPeminjam){
+        this.idPeminjam = idPeminjam;
+        this.namaPeminjam = namaPeminjam;
+    }
+
+    //membuat Setter dan Getter
+    public String getIdPeminjam() {
+        return idPeminjam;
+    }
+
+    public void setIdPeminjam(String idPeminjam) {
+        this.idPeminjam = idPeminjam;
+    }
+
+    public String getNamaPeminjam() {
+        return namaPeminjam;
+    }
+
+    public void setNamaPeminjam(String namaPeminjam) {
+        this.namaPeminjam = namaPeminjam;
+    }
 }
