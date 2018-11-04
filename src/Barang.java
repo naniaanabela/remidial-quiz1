@@ -73,4 +73,21 @@ public class Barang {
         int total = this.sewa.getLamaSewa() * this.getHarga();
         return total;
     }
+    
+    //membuat method info untuk menampilkan
+    public String info () {
+        String info = "" ;
+        info += "TEMPAT PENYEWAAN KAMERA (SLR / GOPRO / MIRORLESS)" + "\n" +"\n";
+        info += "-------------------------------" + "\n";
+        info += "Pegawai yang melayani >>>> " + "\n";
+        info += this.pegawai.info() + "\n";
+        info += "-------------------------------" + "\n";
+        info += "Data Peminjam >>>>" +"\n" ;
+        info += this.pinjam.info();
+        info += "Jenis Barang : "  + getJenisBarang() +"\n" ;
+        info += "Harga sewa /hari : "  + getHarga() +"\n" ;
+        info += this.sewa.info() + "\n";
+        info += "++Harga total sewa yang harus dibayar : " + totalSewa();
+        return info ;
+    }
 }
