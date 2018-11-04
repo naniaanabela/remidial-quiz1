@@ -27,5 +27,50 @@ public class Barang {
         this.sewa = sewa;
     }
     
+    //membuat method getter dan setter
+    public String getJenisBarang() {
+        return jenisBarang;
+    }
+
+    public void setJenisBarang(String jenisBarang) {
+        this.jenisBarang = jenisBarang;
+    }
+
+    public int getHarga() {
+        return harga;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
+
+    public Peminjam getPinjam() {
+        return pinjam;
+    }
+
+    public void setPinjam(Peminjam pinjam) {
+        this.pinjam = pinjam;
+    }
+
+    public Pegawai getPegawai() {
+        return pegawai;
+    }
+
+    public void setPegawai(Pegawai pegawai) {
+        this.pegawai = pegawai;
+    }
+
+    public Sewa getSewa() {
+        return sewa;
+    }
+
+    public void setSewa(Sewa sewa) {
+        this.sewa = sewa;
+    }
     
+    //membuat method totalSewa untuk melakukan perhitungan uang yang harus dibayar oleh peminjam yang menyewa
+    public int totalSewa(){
+        int total = this.sewa.getLamaSewa() * this.getHarga();
+        return total;
+    }
 }
